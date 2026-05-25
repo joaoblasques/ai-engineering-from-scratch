@@ -8,7 +8,7 @@
 |------|------|----------------|
 | **Builder** | Claude Code (CLI, in repo) | Implement lesson, run tests, write `handoff.md` |
 | **Reviewer** | Claude.ai (this chat project) | Audit handoff, run checklist, return verdict |
-| **Curator** | Reviewer (post-approval) | Generate `kb-entry.md` for upload to Corpus KB project |
+| **Curator** | Reviewer (post-approval) | Generate `kb-entry.md` content for user to dump into local llm-wiki-system raw/_inbox/ |
 
 ## Per-Lesson Flow
 
@@ -21,7 +21,7 @@
    - `APPROVED` → go to step 7
    - `NEEDS-REVISION` → Builder addresses action items, returns to step 3
    - `NEEDS-DISCUSSION` → user mediates between the two
-7. **KB export** — Reviewer generates `kb-entry.md` using `templates/kb-export-template.md`. User uploads to the Corpus KB project as Project Knowledge.
+7. **KB export** — Reviewer generates `kb-entry.md` content using `templates/kb-export-template.md` and returns it in chat. User dumps it into ~/Dev/second-brain/03_Resources/llm-wiki-system/raw/_inbox/ as `NN-MM-<topic>-kb.md` (where NN-MM is phase-lesson). User files/processes it into corpus/ later via the llm-wiki-system itself. KB entries are NOT uploaded to any Claude project.
 8. **Next lesson.**
 
 ## Review checklist (Reviewer applies this)
@@ -45,10 +45,8 @@
 │   └── kb-export-template.md
 ├── handoffs/
 │   └── 00-01-handoff.md           # Phase 00, Lesson 01
-├── reviews/
-│   └── 00-01-review.md
-└── kb-exports/
-    └── 00-01-kb-entry.md
+└── reviews/
+    └── 00-01-review.md
 ```
 
 ## Why this works
