@@ -1,0 +1,11 @@
+# Model checkpoints — often gigabytes, not reconstructable from code alone.
+# Git is not designed for large binaries. Store these in cloud storage (S3, GCS)
+# or use DVC/Git LFS for tracked large files instead.
+*.pt
+*.pth
+*.safetensors
+
+# Other large ML artefacts (add as needed)
+*.onnx
+*.bin
+*.h5

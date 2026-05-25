@@ -1,0 +1,7 @@
+# No Python packages required for this lesson.
+# Git is a system binary — install via your OS package manager:
+#   macOS:  brew install git
+#   Ubuntu: sudo apt install git
+#   Windows: https://git-scm.com/download/win
+#
+# Verify installation: git --version

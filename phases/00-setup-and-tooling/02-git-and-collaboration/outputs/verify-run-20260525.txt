@@ -1,0 +1,28 @@
+=== AI Engineering from Scratch — Environment Check ===
+    (cumulative through Phase 00 / Lesson 02)
+
+Lesson 01 — Dev Environment:
+  [PASS] Python 3.11+ (Python 3.12.12 (main, Oct 31 2025, 23:14:57) [Clang 21.1.4 ])
+  [PASS] uv
+  [PASS] NumPy
+  [PASS] Matplotlib
+  [PASS] Jupyter
+  [PASS] Git
+  [PASS] Node.js 20+
+  [PASS] Rust (cargo)
+
+GPU (optional):
+  [PASS] PyTorch
+  [FAIL] CUDA
+
+Lesson 02 — Git & Collaboration:
+  [PASS] Git
+  [PASS] .gitignore covers ML checkpoints (.pt / .pth / .safetensors)
+
+Lesson 02 — Git identity (warnings, not gating):
+  [PASS] git user.name (Jonas Blasques)
+  [PASS] git user.email (tilakapash@gmail.com)
+
+Result: 10/10 core checks passed, 1/2 GPU checks passed
+
+You're ready for Lesson 03.
