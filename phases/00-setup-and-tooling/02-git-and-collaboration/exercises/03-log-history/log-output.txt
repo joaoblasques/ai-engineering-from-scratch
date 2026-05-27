@@ -1,5 +1,9 @@
 $ git log --oneline
 
+# This log mixes two streams:
+#   - This fork's commits (close(00-01), docs(protocol), chore: ...) — added by you.
+#   - Upstream rohitg00 commits (Merge pull request #1XX, feat/fix/docs from rohitg00/<branch>) — inherited from the original repo.
+
 0900de8 chore: remove kb-exports/ — squash artifact, file belongs in local wiki _inbox
 9d752d3 docs(protocol): KB exports go to local wiki _inbox, not Claude project or repo (#2)
 88aea52 close(00-01): Phase 00 / Lesson 01 — Dev Environment (#1)
