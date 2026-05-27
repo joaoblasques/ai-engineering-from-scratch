@@ -1,0 +1,34 @@
+$ git log --oneline
+
+# This log mixes two streams:
+#   - This fork's commits (close(00-01), docs(protocol), chore: ...) — added by you.
+#   - Upstream rohitg00 commits (Merge pull request #1XX, feat/fix/docs from rohitg00/<branch>) — inherited from the original repo.
+
+0900de8 chore: remove kb-exports/ — squash artifact, file belongs in local wiki _inbox
+9d752d3 docs(protocol): KB exports go to local wiki _inbox, not Claude project or repo (#2)
+88aea52 close(00-01): Phase 00 / Lesson 01 — Dev Environment (#1)
+3f26f00 Revert: track .claude/ skills again (course-provided tooling)
+3c44c25 chore: stop tracking .claude/ (local config only)
+7fda1a1 chore: un-ignore _two-claude-review/, add review protocol scaffolding
+664862f Merge pull request #173 from rohitg00/docs/readme-skills-sh-lead
+14c817a docs(readme): lead with npx skills add, list agent-neutral target paths
+0408294 Merge pull request #171 from rohitg00/fix/coderabbit-trailing-findings
+dbaef62 Merge pull request #149 from rohitg00/feat/phase18-quizzes
+58f39ac fix: tighten crewai claims + clarify skills install hint + readme layout note
+d0eca9a fix(phase-18): tighten EchoLeak/NIST/Azure/Mitchell wording per source docs
+702b759 Merge pull request #170 from rohitg00/docs/readme-current-sponsors
+4ca6f48 docs(readme): add current sponsors row
+03983ef Merge pull request #167 from rohitg00/feat/masthead-github-buttons
+c655492 chore(site): bump asset version to bust cdn cache
+22d328c Merge pull request #166 from rohitg00/feat/masthead-github-buttons
+ebb9538 fix(site): unify GH star fetch into header.js, drop inline duplicate
+1273ea1 feat(site): masthead star + follow buttons with live count
+4415dc8 Merge pull request #150 from rohitg00/feat/phase5-quizzes
+
+# Reading the log:
+# - Each line = one commit snapshot
+# - Left = short SHA (7-char hash, unique identifier for that snapshot)
+# - Right = commit message
+# The top is newest; the bottom is older.
+# Commits prefixed "Merge pull request" came from GitHub PRs merged into main.
+# Commits prefixed "feat/fix/chore/docs" follow Conventional Commits convention.
