@@ -1,5 +1,7 @@
 # Lesson 03 — Exercises
 
-1. TODO: Run the CPU vs GPU benchmark and record timings for both devices
-2. TODO: Run the benchmark on Google Colab (T4 GPU) and compare against local CPU results
-3. TODO: Inspect available VRAM and estimate the largest fp16 model that fits (rule of thumb: 2 bytes/parameter)
+Three exercises from the upstream lesson:
+
+1. **Hardware profile** — `01_profile.md` (outcome in `../notes.md`)
+2. **Tensor op benchmark** — covered by upstream `../code/gpu_check.py`; the placeholder file was dropped (see `../notes.md` → Decisions)
+3. **fp16 capacity estimate** — `03_estimate.md` (outcome in `../notes.md`)
